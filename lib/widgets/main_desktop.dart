@@ -8,9 +8,11 @@ class MainDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final screenWidth = screenSize.width;
+    final screenHeight = screenSize.height;
+
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 20.0),
-      height: screenSize.height / 1.2,
+      height: screenHeight / 1.2,
       constraints: const BoxConstraints(minHeight: 350.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
